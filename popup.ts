@@ -8,7 +8,7 @@ let consumer_unfriendly = [["lg.*refrigerator","LG Refrigerator","https:\/\/wiki
 //     console.log("Refreshing the consumer unfriendly list");
 //     fetch(catApiUrl).then(res => res.text()).then(result => {
 //         console.log("got a new consumer unfriendly list: ", result);
-        consumer_unfriendly = JSON.parse(result);
+//         consumer_unfriendly = JSON.parse(result);
         chrome.storage.local.set({
             'consumer_unfriendly': consumer_unfriendly
         })
