@@ -1,0 +1,25 @@
+{
+  "name": "CAT Extension",
+  "description": "Consumer Action Taskforce Extension",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "chrome_extension_cat.html",
+    "default_icon": "logoclinton_icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": [
+        "https://developer.chrome.com/docs/extensions/*",
+        "https://developer.chrome.com/docs/webstore/*",
+        "https://amazon.com/*",
+        "https://www.amazon.com/*"
+      ]
+    }
+  ],
+  "host_permissions": [
+    "https://catapi.ct.ws/*"
+  ],
+  "permissions": ["storage"]
+}
